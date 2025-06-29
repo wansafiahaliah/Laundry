@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 100vh;
+  color: #000;
+  overflow-x: hidden;
+  background: url('https://i.pinimg.com/736x/ba/49/20/ba4920b0cb42888f633473dacfc2922c.jpg') center/cover no-repeat fixed;
+}
+
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 80px;
+  z-index: 100000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-auth {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-auth li a {
+  background-color: transparent;
+  color: #1e1e1e;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: 0.3s ease;
+  border: 1px solid #1e1e1e;
+  font-size: 14px;
+}
+
+.nav-auth li a:hover {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5em;
+  white-space: nowrap;
+  color: #1e1e1e;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-right li a {
+  background-color: #f0f0f0;
+  padding: 8px 14px;
+  border-radius: 25px;
+  font-weight: 500;
+  color: #1e1e1e;
+  border: 1px solid transparent;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-right li a:hover {
+  background-color: #1e1e1e;
+  color: #fff;
+  border-color: #1e1e1e;
+}
+
+.logo-gif {
+  width: 35px;
+  height: 35px;
+}
+
+.video-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  color: #2ab7ca;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.rating-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #2ab7ca;
+  margin: 50px 0 20px;
+}
+
+.rating-stars {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: gold;
+  gap: 5px;
+}
+
+.blink {
+  animation: blinkStar 1s infinite alternate;
+}
+
+@keyframes blinkStar {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0.6; transform: scale(1.2); }
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 500px;
+  margin: 30px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.slide-image {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  animation: fadeEffect 1s ease-in-out;
+}
+
+@keyframes fadeEffect {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 6px 10px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.5);
+  user-select: none;
+  transition: 0.3s;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.video-card {
+  background: #f6fffe;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.video-card video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.jump-caption {
+  font-size: 1rem;
+  margin-top: -20px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.jump-caption a {
+  color: #2ab7ca;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.jump-caption a:hover {
+  color: #0b8b9e;
+}
+
+footer {
+  background-color: #2ab7ca;
+  color: white;
+  text-align: center;
+  padding: 10px 5px;
+  margin-top: auto;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+footer p {
+  margin: 2px 0;
+}

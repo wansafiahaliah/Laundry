@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking</title>
+  <link rel="icon" type="image/png" href="images/icon.jpg" />
+  <link rel="stylesheet" href="booking.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">  
+</head>
+
+<header>
+  <div class="nav-left">
+    <ul class="nav-auth">
+      <li><a href="login.html">Log In</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+    <a href="index.html" class="logo">Bubble Lab Laundry</a>
+  </div>
+
+  <nav>
+    <ul class="nav-right">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<body>
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Your clothes, our care</h2>
+      <p>Clean & fresh every time — book now with just a few clicks</p>
+    </div>
+  </section>
+
+  <div class="price-container">
+    <h2 class="price-title"> Price list 💸 </h2>
+    <table class="price-table-horizontal">
+      <tr>
+        <th>Express Laundry</th><th>Wash Only</th><th>Stain Removal</th><th>Leather Care</th>
+        <th>Ironing</th><th>Carpet Cleaning</th><th>Curtain Cleaning</th><th>Wash & Fold</th><th>Dry Cleaning</th>
+      </tr>
+      <tr>
+        <td>RM30.00</td><td>RM5.00</td><td>RM18.00</td><td>RM35.00</td>
+        <td>RM10.00</td><td>RM50.00</td><td>RM40.00</td><td>RM20.00</td><td>RM28.00</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="container">
+    <h1>Booking Form</h1> 
+    <p class="sub-heading">Need our services? Just fill the form below:</p>
+    <img src="images/arrow.gif" alt="arrow down" style="width: 60px; display: block; margin: 0 auto 20px;" />
+
+   <form id="bookingForm">
+     <label>Name:</label>
+     <input type="text" name="name" required>
+
+     <label>Contact Number:</label>
+     <input type="tel" name="contact" required>
+
+     <label>Address:</label>
+     <textarea name="address" required></textarea>
+      
+     <label>Select Services:</label>
+     <div class="service-checkbox-group">
+        <label><input type="checkbox" value="Express Laundry"> Express Laundry</label>
+        <label><input type="checkbox" value="Wash Only"> Wash Only</label>
+        <label><input type="checkbox" value="Stain Removal"> Stain Removal</label>
+        <label><input type="checkbox" value="Leather Care"> Leather Care</label>
+        <label><input type="checkbox" value="Ironing"> Ironing</label>
+        <label><input type="checkbox" value="Carpet Cleaning"> Carpet Cleaning</label>
+        <label><input type="checkbox" value="Curtain Cleaning"> Curtain Cleaning</label>
+        <label><input type="checkbox" value="Wash & Fold"> Wash & Fold</label>
+        <label><input type="checkbox" value="Dry Cleaning"> Dry Cleaning</label>
+     </div>
+
+     <p id="totalPrice" style="margin-top: 10px; font-weight: bold;">Total: RM0.00</p>
+
+      <label>Date:</label>
+      <input type="date" required>
+
+      <label>Time:</label>
+      <input type="time" required>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; <sup>2025 </sup>  |  Bubble Lab Laundry.  All rights reserved.</p>
+    <p>Contact us : <sub>+6012-345 6789</sub></p>
+  </footer>
+
+  <script src="booking.js"></script>
+</body>
+</html>

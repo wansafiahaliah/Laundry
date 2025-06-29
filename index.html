@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOME PAGE</title>
+  <link rel="icon" type="image/png" href="images/icon.jpg" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="nav-left">
+     <ul class="nav-auth">
+      <li><a href="login.html">Log In</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+     </ul>
+      <a href="index.html" class="logo">Bubble Lab Laundry</a>
+    </div>
+
+     <ul class="nav-right">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+     </ul>
+  </header>
+
+  <section class="Home">
+    <div class="content">
+     <div class="main-title-with-logo">
+      <img src="images/logo1.jpg" alt="Bubble Lab Logo" class="main-logo" />
+      <h1 class="main-title"> BUBBLE LAB LAUNDRY</h1>
+    </div>
+
+      <img src="images/sign.jpg" alt="Bubble Lab Sign" class="neon-sign" />
+      <p class="subtitle fade-in" style="animation-delay: 0.4s;">Your clothes, our care</p>
+      <p class="subtitle fade-in" style="animation-delay: 0.6s;">Your clothes come back spotless, smelling fresh, and neatly folded!</p>
+
+     
+      <div class="btn-time-container fade-in" style="animation-delay: 0.8s;">
+        <button id="timeBtn" onclick="toggleTime()">TIME</button>
+        <span id="timeOutput"></span>
+        <span id="closeTime" onclick="hideTime()">✖</span>
+      </div>
+    </div>
+    
+    <div class="bubbles">
+      <span style="--i:11"></span>
+      <span style="--i:15"></span>
+      <span style="--i:7"></span>
+      <span style="--i:18"></span>
+      <span style="--i:13"></span>
+      <span style="--i:10"></span>
+      <span style="--i:20"></span>
+      <span style="--i:17"></span>
+      <span style="--i:12"></span>
+      <span style="--i:9"></span>
+    </div>
+
+  </section>
+
+  <section class="welcome-section">
+    <div class="container">
+      <h2>WELCOME TO BUBBLE LAB LAUNDRY</h2>
+      <p>We’re an eco‑friendly laundry service committed to delivering spotless, fresh, and neatly folded garments straight to your doorstep.</p>
+      <a href="https://www.bubblelab.com.my/" class="btn-welcome" target="_blank">Learn More</a>
+    </div>
+  </section>
+
+  <section class="why-choose-us">
+    <div class="container">
+      <h2 class="section-title">WHY CHOOSE US</h2>
+      <div class="features">
+      
+        <div class="feature-box">
+          <img src="images/logo1.jpg" alt="Feature 1" class="feature-circle">
+          <h3>YOUR PROFESSIONAL WET CLEANERS</h3>
+          <p>Our innovative cleaning process instantly improves the appearance of your garments.</p>
+        </div>
+
+        <div class="feature-box">
+          <img src="images/logo2.png" alt="Feature 2" class="feature-circle">
+          <h3>CARES FOR THE ENVIRONMENT</h3>
+          <p>We use biodegradable detergents to care for your clothes and the planet.</p>
+        </div>
+
+        <div class="feature-box">
+          <img src="images/logo3.png" alt="Feature 3" class="feature-circle">
+          <h3>FAST TURNAROUND</h3>
+          <p>Get your laundry professionally cleaned, dried, and folded within 24 hours.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works-clean">
+    <div class="container">
+      <h2 class="how-clean-title">HOW IT WORKS</h2>
+      <div class="how-clean-row">
+
+  
+       <div class="how-clean-step top-step">
+        <img src="images/order.png" alt="You Order" />
+        <h3>You Order</h3>
+        <div class="clean-line"></div>
+        <p>Make your order by calling us or through our website.</p>
+       </div>
+
+       <div class="how-clean-step bottom-step">
+        <img src="images/machine.png" alt="Customize Wash" />
+        <h3>Customize Your Wash</h3>
+        <div class="clean-line"></div>
+        <p>We clean your clothes exactly how you want them.</p>
+       </div>
+
+       <div class="how-clean-step top-step">
+        <img src="images/delivery.png" alt="We Deliver" />
+        <h3>We Deliver</h3>
+        <div class="clean-line"></div>
+        <p>Your laundry is delivered fresh and clean to your doorstep.</p>
+       </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="trusted-by">
+    <div class="container">
+      <h2 class="trusted-title">TRUSTED BY TOP BRANDS</h2>
+      <div class="swiper trustedSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/holiday.png" alt="Brand 1" /></div>
+          <div class="swiper-slide"><img src="images/perdana.png" alt="Brand 2" /></div>
+          <div class="swiper-slide"><img src="images/furama.png" alt="Brand 3" /></div>
+          <div class="swiper-slide"><img src="images/hilton.jpg" alt="Brand 4" /></div>
+          <div class="swiper-slide"><img src="images/doubletree.png" alt="Brand 5" /></div>
+          <div class="swiper-slide"><img src="images/ascott.png" alt="Brand 6" /></div>
+          <div class="swiper-slide"><img src="images/impiana.png" alt="Brand 7" /></div>
+          <div class="swiper-slide"><img src="images/melia.png" alt="Brand 8" /></div>
+          <div class="swiper-slide"><img src="images/dewan.png" alt="Brand 9" /></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-us">
+    <div class="container">
+    <h2 class="section-title">ABOUT US</h2>
+    <p class="about-description">
+    Bubble Lab Laundry is expanding across key areas to serve you better. We now have 3 branches located in strategic hotspots to ensure easy access, fast service, and consistent quality for all your laundry needs.
+    </p>
+
+    <p class="about-branches-note">
+      📍 Our branches:
+      <br><strong>1. Bubblelab Kota Damansara 6</strong>
+      <br><strong>2. Bubblelab SS9 Shah Alam</strong>
+      <br><strong>3. Bubblelab Seksyen 24 Shah Alam</strong>
+    </p>
+
+    <div class="branch-map">
+      <img src="images/branch.jpg" usemap="#branches" alt="Bubblelab Branches" class="branch-full-image">
+      <map name="branches">
+        <area shape="rect" coords="0,0,720,384" href="https://www.google.com/maps?q=bubblelab+kota+damansara+6" target="_blank" alt="Kota Damansara 6">
+
+        <area shape="rect" coords="0,384,720,768" href="https://www.google.com/maps?q=bubblelab+ss9+shah+alam" target="_blank" alt="SS9 Shah Alam">
+
+        <area shape="rect" coords="0,768,720,1280" href="https://www.google.com/maps?q=bubblelab+seksyen+24+shah+alam" target="_blank" alt="Seksyen 24 Shah Alam">
+      </map>
+    </div>
+  </div>
+  </section>
+
+  <a href="https://wa.me/60123456789" class="whatsapp-btn" title="Chat with us" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <audio id="bgSound" loop hidden>
+    <source src="sounds/pop.mp3" type="audio/mpeg">
+     Your browser does not support the audio element.
+  </audio>
+
+   <footer>
+    <p>&copy; <sup>2025</sup> |  Bubble Lab Laundry.  All rights reserved.</p>
+    <p>Contact us : <sub>+6012-345 6789</sub></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
+  <script>
+      document.addEventListener('click', function () {
+      document.getElementById('bgSound').play().catch(e => {
+      console.warn("Autoplay failed:", e);
+      });
+      }, { once: true });
+  </script>
+</body>
+</html>

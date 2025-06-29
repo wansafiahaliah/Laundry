@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 100vh;
+  color: #000;
+  overflow-x: hidden;
+  background: linear-gradient(to left, #b2fefa, #5bd1e9);
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 80px;
+  z-index: 100000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-auth {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-auth li a {
+  background-color: transparent;
+  color: #1e1e1e;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: 0.3s ease;
+  border: 1px solid #1e1e1e;
+  font-size: 14px;
+}
+
+.nav-auth li a:hover {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5em;
+  white-space: nowrap;
+  color: #1e1e1e;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-right li a {
+  background-color: #f0f0f0;
+  padding: 8px 14px;
+  border-radius: 25px;
+  font-weight: 500;
+  color: #1e1e1e;
+  border: 1px solid transparent;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-right li a:hover {
+  background-color: #1e1e1e;
+  color: #fff;
+  border-color: #1e1e1e;
+}
+
+.logo-gif {
+  width: 35px;
+  height: 35px;
+}
+
+/* HERO SECTION */
+.hero {
+  background: url('images/laundry.jpg') no-repeat center center/cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* PRICE TABLE */
+.price-container {
+  margin: 50px auto 30px;
+  text-align: center;
+}
+
+.price-title {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #0073e6;
+}
+
+.price-table-horizontal {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 90%;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.price-table-horizontal th,
+.price-table-horizontal td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.price-table-horizontal th {
+  background-color: #00c2a8;
+  color: white;
+}
+
+/* BOOKING FORM */
+.container {
+  background: #ffffff;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease;
+}
+
+.container h1 {
+  text-align: center;
+  color: #00aaff;
+}
+
+.sub-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #555;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="time"],
+form textarea {
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 5px;
+  border: 2px solid #00c2a8;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #0073e6;
+  box-shadow: 0 0 8px rgba(0,115,230,0.5);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* CHECKBOXES */
+.service-checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.service-checkbox-group label {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 1px solid transparent;
+}
+
+.service-checkbox-group label:hover {
+  background-color: #e0f7fa;
+  border-color: #00c2a8;
+}
+
+/* BUTTON */
+button[type="submit"] {
+  margin-top: 20px;
+  background-color: #00aaff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button[type="submit"]:hover {
+  background-color: #008ecc;
+}
+
+/* FOOTER */
+footer {
+  background-color: #2ab7ca;
+  color: white;
+  text-align: center;
+  padding: 10px 5px;
+  margin-top: auto;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+footer p {
+  margin: 2px 0;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
